@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header-container">
+        <h2>Odin Library by Aka</h2>
+        </div>
+
+        <div class="book-container">
+            <div class="add-book-container">
+                <form action="" id="bookform">
+                    <label for="author">Author:</label>
+                    <input type="text" name="author" id="author" required>
+
+                    <label for="bookname">Title:</label>
+                    <input type="text" name="bookname" id="bookname" required>
+
+                    <label for="pages">Number of pages:</label>
+                    <input type="number" name="pages" id="pages" required>
+
+                    <input type="radio" name="readstatus" id="read" value=true required checked>
+                    <label for="read">Read</label>
+                    <input type="radio" name="readstatus" id="notread" value=false>
+                    <label for="notread">Not Read</label>
+
+                    <input type="submit" id="submitbook" value="Add Book">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
