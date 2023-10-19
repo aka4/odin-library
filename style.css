@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto" , sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+}
+
+.header-container {
+padding: 50px 100px 50px 100px;
+background-color: #f8fafc;
+display: grid;
+align-content: center;
+justify-content: center;
+}
+
+.book-container {
+    background-color: #e2e8f0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-auto-rows: 220px;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: inset rgba(0, 0, 0, 0.2) 0px 3px 5px 0px
+}
+
+#bookform {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+
+
+.book-item, .add-book-container {
+    box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 5px 0px;
+    height: 200px;
+    padding: 10px;
+    background-color: #f8fafc;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.book-item {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+button, #submitbook {
+    border-width: 0;
+    padding: 7px 20px;
+    width: 200px;
+    height: 35px;
+    color: #f8fafc;
+    border-radius: 10px;
+}
+
+.removeButton {
+    background-color: #991b1b;
+}
+
+.readButton {
+    background-color: #22c55e;
+}
+
+.not-read-style {
+    background-color: #ef4444;
+}
+
+#submitbook {
+    background-color: #475569;
+}
+
+input:not([type = "radio"]) {
+    border-width: 1px solid #475569;
+    border-radius: 10px;
+    width: 200px;
+    height: 35px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+}
